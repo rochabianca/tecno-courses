@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div v-if="loading">
-      <p>Carregando...</p>
-    </div>
+    <PageLoading v-if="loading" />
     <div v-else>
       <h1>Contato</h1>
       <p>{{ api }}</p>
